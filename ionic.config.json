@@ -1,8 +1,0 @@
-{
-  "name": "wiflixx",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue-vite",
-  "id": "d091287f"
-}
