@@ -3,10 +3,10 @@ import '../app.css';
 import { Bell, UserRound, ChevronDown, Search } from '@lucide/svelte';
 </script>
 
-<nav class="flex justify-evenly bg-red-500 ">
-    <div class="bg-transparent flex items-center p-10 border-2 border-white-500 rounded-full">
+<nav class="flex justify-evenly ">
+    <div class="bg-transparent flex items-center border-2 border-indigo-500 rounded-full">
         <Search/>
-        <input type="text" placeholder="Search movies " class="bg-transparent border-none text-white-500" />
+        <input type="text" placeholder="Search movies " class="bg-transparent border-none" />
     </div>
     <ul class="flex justify-evenly rounded-full">
         <li>Movie</li>
