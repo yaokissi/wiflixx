@@ -1,10 +1,10 @@
 <script>
 import MainContent from '$lib/components/MainContent.svelte';
 </script>
-
+<MainContent></MainContent>
 
 <body>
-<p>Hello world</p>
+
 </body>
 
 <style>
