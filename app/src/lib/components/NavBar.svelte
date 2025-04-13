@@ -32,7 +32,7 @@
     <Bell
           class="
           backdrop-blur-2xl
-          p-5
+          p-1
           z-999
           text-white
           text-lg
@@ -53,16 +53,17 @@
                 border-white-500
                 backdrop-blur-2xl
                 rounded-full
-                w-40
+                w-[15%]
 
 ">
-        <div>
+        <div class="flex justify-between items-center ">
             <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-10 h-10"/>
+            <div>
+                <p class="text-xs">YAO KISSI</p>
+                <p class="text-xs text-gray-700">@thebig</p>
+            </div>
         </div>
-        <div>
-            <p class="text-xs">YAO KISSI</p>
-            <p class="text-xs text-gray-700">@thebig</p>
-        </div>
+
             <div>
                 <ChevronDown size="24" color="white" />
             </div>
