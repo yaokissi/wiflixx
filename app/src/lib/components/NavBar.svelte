@@ -47,15 +47,27 @@
 
 
 "/>
-    <div class="flex justify-around items-center border-2 border-white-500 rounded-full">
-        <div class="flex justify-around items-center rounded-full">
-            <div>
-                <UserRound size="24" color="white" />
-                <span>Pseudo</span><br>
-            </div>
-            <ChevronDown size="24" color="white" />
+    <div class="flex
+                justify-around
+                items-center
+                border-white-500
+                backdrop-blur-2xl
+                rounded-full
+                w-40
+
+">
+        <div>
+            <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-10 h-10"/>
         </div>
+        <div>
+            <p class="text-xs">YAO KISSI</p>
+            <p class="text-xs text-gray-700">@thebig</p>
+        </div>
+            <div>
+                <ChevronDown size="24" color="white" />
+            </div>
     </div>
+
 </nav>
 
 
