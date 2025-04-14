@@ -30,9 +30,11 @@
         <li>Mistery</li>
     </ul>
     <Bell
+            size="24"
+            color="white"
           class="
           backdrop-blur-2xl
-          p-1
+          p-3
           z-999
           text-white
           text-lg
@@ -41,8 +43,8 @@
           inline-flex
           items-center
           justify-center
-          h-7
-          w-7
+          h-10
+          w-10
 
 
 
@@ -59,8 +61,8 @@
         <div class="flex justify-between items-center ">
             <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-10 h-10"/>
             <div>
-                <p class="text-xs">YAO KISSI</p>
-                <p class="text-xs text-gray-700">@thebig</p>
+                <p class="text-xs text-white">YAO KISSI</p>
+                <p class="text-xs text-white">@thebig</p>
             </div>
         </div>
 
