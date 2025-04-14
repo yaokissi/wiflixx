@@ -1,5 +1,6 @@
 <script>
     import NavBar from "$lib/components/NavBar.svelte";
+    import NewTrailerSection from "$lib/components/NewTrailerSection.svelte";
     import { Bell, UserRound, ChevronDown, Search } from '@lucide/svelte';
 </script>
 
@@ -14,5 +15,9 @@
                     border
                     border-white/30">
         <NavBar />
+        <section class="w-[90%] mx-auto">
+            <NewTrailerSection></NewTrailerSection>
+        </section>
+
     </section>
 </main>
