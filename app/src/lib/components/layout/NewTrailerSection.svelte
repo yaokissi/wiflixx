@@ -1,6 +1,6 @@
 <script>
     import { ArrowDownWideNarrow } from '@lucide/svelte';
-    import bmfCover from '../../assets/images/bmfCover.jpg';
+    import bmfCover from '../../../assets/images/bmfCover.jpg';
 
     let imageUrl = bmfCover;
 </script>
@@ -15,8 +15,10 @@
                 overflow-auto
         ">
     <div class="flex
+
                 justify-between items-center w-[90%]
                 mx-auto
+
                 pt-5
 ">
         <h2 class="text-sm text-white">🔥 New Trailer</h2>

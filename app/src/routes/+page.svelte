@@ -1,8 +1,7 @@
 <script>
-import MainContent from '$lib/components/MainContent.svelte';
+import MainContent from '$lib/components/layout/MainContent.svelte';
 </script>
 <MainContent></MainContent>
-
 <body>
 
 </body>

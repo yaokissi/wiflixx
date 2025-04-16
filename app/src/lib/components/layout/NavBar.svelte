@@ -1,5 +1,5 @@
 <script>
-    import '../../app.css';
+    import '../../../app.css';
     import { Bell, UserRound, ChevronDown, Search } from '@lucide/svelte';
 </script>
 
