@@ -7,7 +7,7 @@
 
 <section
         class="
-                w-[25%]
+                w-[23%]
                 backdrop-blur-2xl
                 rounded-xl
                 border-white-500

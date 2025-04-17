@@ -6,7 +6,7 @@
 </script>
 
 <main class="min-h-screen w-full">
-    <section class="w-[90%]
+    <section class="w-[95%]
                     mx-auto
                     min-h-screen
                     bg-white/20
@@ -16,7 +16,7 @@
                     border
                     border-white/30">
         <NavBar />
-        <section class="w-[90%] mx-auto">
+        <section class="flex justify-around w-[90%] mx-auto">
             <NewTrailerSection></NewTrailerSection>
             <NowTrending></NowTrending>
         </section>
