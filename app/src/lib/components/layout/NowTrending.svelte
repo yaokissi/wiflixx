@@ -67,9 +67,7 @@ import {Ellipsis, Download, Play } from "@lucide/svelte";
       <div class=" flex justify-between w-[60%] mt-4 ">
           <button class="flex justify-around bg-white p-3 w-[30%] rounded-full"> <Play class=""></Play> Watch</button>
           <button class="flex justify-around border text-white p-3 w-[40%] rounded-full"> <Download></Download> Download</button>
-          <button class="w-[10%] border flex justify-center items-center rounded-full text-white"> <Ellipsis></Ellipsis> </button>
-
+          <button class="w-[11%] border flex justify-center items-center rounded-full text-white"> <Ellipsis></Ellipsis> </button>
       </div>
     </article>
-
 </section>

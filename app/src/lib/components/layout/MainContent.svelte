@@ -3,6 +3,8 @@
     import NewTrailerSection from "$lib/components/layout/NewTrailerSection.svelte";
     import NowTrending from "$lib/components/layout/NowTrending.svelte";
     import { Bell, UserRound, ChevronDown, Search } from '@lucide/svelte';
+    import ContinueWatching from "$lib/components/layout/ContinueWatching.svelte";
+    import MightLike from "$lib/components/layout/MightLike.svelte";
 </script>
 
 <main class="min-h-screen w-full">
@@ -20,6 +22,10 @@
             <NewTrailerSection></NewTrailerSection>
             <NowTrending></NowTrending>
         </section>
-
+        <section class="flex justify-around w-[90%] mx-auto mt-5 ">
+            <ContinueWatching></ContinueWatching>
+            <MightLike></MightLike>
+        </section>
     </section>
+
 </main>
