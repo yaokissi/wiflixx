@@ -36,7 +36,7 @@ let imageUrl = bmfCover;
 "
                  style="
             background-image: url({imageUrl});
-            opacity: 0.80;
+
 ">
                 <button class=" absolute text-center backdrop-blur-3xl top-2 right-4 rounded-full text-white"> <Ellipsis class="size-5"></Ellipsis> </button>
                 <p class="
@@ -75,7 +75,7 @@ let imageUrl = bmfCover;
 "
                  style="
             background-image: url({imageUrl});
-            opacity: 0.80;
+
 ">
                 <button class=" absolute flex items-center text-center backdrop-blur-3xl top-2 right-4 rounded-full text-white"> <Ellipsis class="size-5"></Ellipsis> </button>
                 <p class="
@@ -114,7 +114,7 @@ let imageUrl = bmfCover;
 "
                  style="
             background-image: url({imageUrl});
-            opacity: 0.80;
+
 ">
                 <button class=" absolute text-center backdrop-blur-3xl top-2 right-4 rounded-full text-white"> <Ellipsis class="size-5"></Ellipsis> </button>
                 <p class="
@@ -135,10 +135,6 @@ let imageUrl = bmfCover;
                     <Play class="text-black  size-9 bg-white rounded-full p-2"></Play>
                 </div>
             </div>
-
-
-
-
 
         </div>
     </article>
