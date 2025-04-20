@@ -19,8 +19,8 @@ const handleResponse = async (response) => {
  const getApiUrl = async ()  => {
      try {
          const response = await fetch('https://api.themoviedb.org/3/movie/11');
-         if (!response.ok)
-             throw new Error('Failed to fetch API URL');
+         if (response.ok)
+            console.log('Response:', response);
          const data = await response.json();
          return data.url;
      }
@@ -29,4 +29,6 @@ const handleResponse = async (response) => {
             throw error;
         }
  }
+
+ getApiUrl();
 
