@@ -214,7 +214,7 @@
             <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-10 h-10"/>
             <div>
                 <p class="text-xs text-white">YAO KISSI</p>
-                <a href="https://ydev-eight.vercel.app"><p class="text-xs text-white text-underline">Visit my website</p></a> 
+                <a href="https://ydev-eight.vercel.app"><p class="text-xs text-cyan-300 underline">Visit my website</p></a>
             </div>
         </div>
         <div>
