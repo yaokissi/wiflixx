@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bfecb122-938f-44b3-9639-7ee2da703b23" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/lib/api/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/lib/api/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/lib/components/layout/MightLike.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/lib/components/layout/MightLike.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/lib/components/layout/NavBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/lib/components/layout/NavBar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/lib/components/layout/NowTrending.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/lib/components/layout/NowTrending.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/routes/+page.svelte" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navbar" />
+        <option value="Main" />
+        <option value="Navbar" />
+        <option value="NewTrailerSection" />
+        <option value="NowTrending" />
+        <option value="ContinueWatching" />
+        <option value="MightLike" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yaokissi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yaokissi/wiflixx&quot;,
+    &quot;accountId&quot;: &quot;f5002b33-0a66-459c-bd8b-5c7ad2522be0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2vEqeSsomlx101ctazkoa6ypHdH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yaokissi/IdeaProjects/wiflixx/app/src/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/lib/components/layout" />
+      <recent name="$PROJECT_DIR$/app/src" />
+      <recent name="$PROJECT_DIR$/app/src/assets/images" />
+      <recent name="$PROJECT_DIR$/app/static" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bfecb122-938f-44b3-9639-7ee2da703b23" name="Changes" comment="" />
+      <created>1743720675586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743720675586</updated>
+      <workItem from="1743720676875" duration="130374000" />
+      <workItem from="1745186603664" duration="5844000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

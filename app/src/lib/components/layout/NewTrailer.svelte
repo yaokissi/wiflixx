@@ -1,9 +1,9 @@
 <script>
-    import { getPopularMovies, getImageUrl, getMovieTrailer, getSimilarMovies } from '$lib/services/tmdb';
-    import { favorites } from '$lib/stores/favorites';
+    import { getUpcomingMovies, getImageUrl, getMovieTrailer } from '$lib/services/tmdb';
     import { openTrailerPopup } from '$lib/stores/popup';
     import { Play, Heart } from '@lucide/svelte';
     import { onMount } from 'svelte';
+    import { favorites } from '$lib/stores/favorites';
 
     let movies = [];
     let loading = true;
@@ -16,12 +16,7 @@
 
     onMount(async () => {
         try {
-            const popularMovies = await getPopularMovies();
-            if (popularMovies.length > 0) {
-                const currentMovie = popularMovies[0];
-                movies = await getSimilarMovies(currentMovie.id);
-                movies = movies.slice(0, 4); // Limiter à 4 films
-            }
+            movies = await getUpcomingMovies();
         } catch (e) {
             error = e.message;
             console.error('Erreur lors du chargement des films:', e);
@@ -46,10 +41,10 @@
     }
 </script>
 
-<section class="w-[70%] backdrop-blur-3xl rounded-xl border-white-500  overflow-auto">
+<section class="w-[70%] backdrop-blur-2xl rounded-xl border-white-500 h-[50vh] overflow-auto">
     <div class="flex justify-between items-center w-[90%] mx-auto pt-5">
-        <h2 class="text-lg text-white font-bold">💫 You Might Like</h2>
-        <p class="text-sm text-white"><span class="text-gray-700 text-xs">Sort By :</span> Similar ⏚</p>
+        <h2 class="text-sm text-white">🎬 New Trailer</h2>
+        <p class="text-sm text-white"><span class="text-gray-700 text-xs">Sort By :</span> Latest ⏚</p>
     </div>
 
     {#if loading}
@@ -87,13 +82,11 @@
                             class="flex items-center justify-center gap-1 bg-white/10 text-white p-2 rounded-lg hover:bg-white/20 transition-colors"
                             on:click={() => toggleFavorite(movie)}
                         >
-                            <Heart size={16} class={favoriteIds.has(movie.id) ? 'text-red-500' : ''} />
+                            <Heart size={16} class={favoriteIds.has(movie.id) ? 'text-red-500 fill-red-500' : ''} />
                         </button>
                     </div>
                 </div>
             {/each}
         </div>
     {/if}
-</section>
-
-
+</section> 
