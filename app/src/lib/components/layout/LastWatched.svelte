@@ -6,14 +6,14 @@
     $: watchedMovies = $watched;
 </script>
 
-<section class="w-[23%] backdrop-blur-2xl rounded-xl border-white-500 overflow-auto">
+<section class="w-[23%] backdrop-blur-2xl rounded-xl border-white-500 h-[35vh] overflow-auto">
     <div class="flex justify-between items-center w-[90%] mx-auto pt-5">
-        <h2 class="text-sm text-white">🎬 Dernièrement regardés</h2>
+        <h2 class="text-sm text-white">🎬 Last Watched</h2>
     </div>
 
     {#if watchedMovies.length === 0}
         <div class="flex items-center justify-center h-full">
-            <p class="text-white">Aucun film regardé récemment</p>
+            <p class="text-white">No movies watched recently</p>
         </div>
     {:else}
         {#each watchedMovies as movie}

@@ -46,7 +46,7 @@
     }
 </script>
 
-<section class="w-[70%] backdrop-blur-3xl rounded-xl border-white-500  overflow-auto">
+<section class="w-[70%] backdrop-blur-3xl rounded-xl border-white-500 h-[35vh]  overflow-auto">
     <div class="flex justify-between items-center w-[90%] mx-auto pt-5">
         <h2 class="text-lg text-white font-bold">💫 You Might Like</h2>
         <p class="text-sm text-white"><span class="text-gray-700 text-xs">Sort By :</span> Similar ⏚</p>
