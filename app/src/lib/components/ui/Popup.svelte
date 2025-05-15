@@ -50,11 +50,11 @@
                 </div>
             {:else if $popupStore.type === 'favorites'}
                 <div class="text-white">
-                    <h2 class="text-2xl font-bold mb-4">Mes Favoris ({$favorites.length})</h2>
+                    <h2 class="text-2xl font-bold mb-4"> Favorites ({$favorites.length})</h2>
                     {#if $favorites.length === 0}
                         <div class="flex flex-col items-center justify-center py-12">
                             <Heart class="w-16 h-16 text-gray-400 mb-4" />
-                            <p class="text-gray-400 text-lg">Vous n'avez pas encore de films favoris</p>
+                            <p class="text-gray-400 text-lg">No favorite films yet</p>
                         </div>
                     {:else}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
