@@ -43,7 +43,7 @@
     }
 </script>
 
-<section class="w-[23%] backdrop-blur-2xl rounded-xl border-white-500 h-[50vh] overflow-auto">
+<section class="w-full md:w-[23%] min-h-[50vh] backdrop-blur-2xl rounded-xl border-white-500 h-[50vh] overflow-auto">
     <div class="flex justify-between items-center w-[90%] mx-auto pt-5">
         <h2 class="text-sm text-white">🔥 New Trailer</h2>
         <p class="text-sm text-white"><span class="text-gray-700 text-xs">Sort By :</span> Today ⏚</p>

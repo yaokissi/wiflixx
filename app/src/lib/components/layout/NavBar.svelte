@@ -113,7 +113,8 @@
     }
 </script>
 
-<nav class="flex justify-evenly items-center w-full h-20 rounded-full relative z-50">
+<!-- Desktop navbar (visible à partir de lg) -->
+<nav class="hidden lg:flex justify-evenly items-center w-full h-20 rounded-full relative z-50">
     <div class="flex
                 items-center
                 w-[20%]
@@ -165,7 +166,7 @@
             </div>
         {/if}
     </div>
-    <ul class="flex justify-evenly rounded-full">
+    <ul class="hidden lg:flex justify-evenly rounded-full">
         <li>Movie</li>
         <li>TV Series</li>
         <li>Animations</li>
@@ -209,18 +210,75 @@
                 backdrop-blur-2xl
                 rounded-full
                 w-[15%]
-">
+    ">
         <div class="flex justify-between items-center ">
-            <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-10 h-10"/>
+            <a href="https://yaodev.me" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-10 h-10"/>
+            </a>
             <div>
                 <p class="text-xs text-white">YAO KISSI</p>
-                <a href="https://ydev-eight.vercel.app"><p class="text-xs text-cyan-300 underline">Visit my website</p></a>
+                <a href="https://yaodev.me" target="_blank" rel="noopener noreferrer"><p class="text-xs text-cyan-300 underline">Visit my website</p></a>
             </div>
         </div>
         <div>
             <ChevronDown size="24" color="white" />
         </div>
     </div>
+</nav>
+
+<!-- Mobile/tablette bottom navbar (visible sous lg) -->
+<nav class="lg:hidden fixed bottom-0 inset-x-0 h-16 z-[1000]">
+    <div class="mx-auto w-full h-full flex items-center justify-between px-3 bg-white/10 backdrop-blur-2xl border-t border-white/20">
+        <div class="flex items-center gap-2 flex-1" bind:this={searchContainer}>
+            <Search class="text-white" size={18} />
+            <input
+                type="text"
+                placeholder="Search movies"
+                class="h-8 w-full text-white bg-transparent border-none focus:outline-none placeholder-white/70 text-sm"
+                value={searchQuery}
+                on:input={handleSearch}
+            />
+        </div>
+        <button
+            class="ml-2 favorite-heart bg-white/10 p-2 rounded-full text-white h-9 w-9 inline-flex items-center justify-center hover:bg-white/20"
+            on:click={handleFavoritesClick}
+        >
+            <Heart size="18" />
+        </button>
+        <a href="https://yaodev.me" target="_blank" rel="noopener noreferrer" class="ml-2">
+            <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-9 h-9"/>
+        </a>
+    </div>
+
+    {#if $searchStore.isLoading}
+        <div class="absolute -top-6 right-5">
+            <div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+        </div>
+    {/if}
+
+    {#if $searchStore.results.length > 0 && searchQuery.trim() !== ''}
+        <div class="absolute bottom-16 left-0 right-0 mx-2 bg-white rounded-lg shadow-lg overflow-hidden z-[1100] border border-white/30">
+            {#each $searchStore.results.slice(0, 6) as movie}
+                <div class="p-3 hover:bg-white/10 cursor-pointer flex items-center gap-3"
+                     on:click={() => handleSearchResultClick(movie)}>
+                    <img src={`https://image.tmdb.org/t/p/w92${movie.poster_path}`} 
+                         alt={movie.title}
+                         class="w-10 h-15 object-cover rounded"
+                    />
+                    <div class="flex-grow">
+                        <p class="text-black text-sm">{movie.title}</p>
+                        <p class="text-gray-400 text-xs">{movie.release_date?.split('-')[0]}</p>
+                    </div>
+                    <button 
+                        class="flex items-center justify-center gap-1 bg-white/10 text-black p-2 rounded-lg hover:bg-white/20 transition-colors"
+                        on:click|stopPropagation={() => toggleFavorite(movie)}
+                    >
+                        <Heart size={16} class={favoriteIds.has(movie.id) ? 'text-red-500' : ''} />
+                    </button>
+                </div>
+            {/each}
+        </div>
+    {/if}
 </nav>
 
 <style>

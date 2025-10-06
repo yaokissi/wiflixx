@@ -51,10 +51,10 @@ $: if (currentMovie) {
 </script>
 
 <section
-    class="w-[70%]
+    class=" w-full md:w-[70%]
             rounded-xl
             border-white-500
-            h-[50vh]
+            min-h-[50vh]
             overflow-auto
             relative"
     style="background-image: var(--movie-bg); background-size: cover; background-position: center; opacity: 0.90;"
