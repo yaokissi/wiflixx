@@ -93,13 +93,13 @@ $: if (currentMovie) {
 
             <div class="flex justify-between text-center w-[60%] mt-4">
                 <button 
-                    class="flex justify-center md:justify-around bg-white p-3 w-[25%] items-center rounded-full"
+                    class="flex justify-center md:justify-around bg-white p-3 w-[25%] h-[25%] items-center rounded-full"
                     on:click={() => handleWatchTrailer(currentMovie)}
                 >
                     <Play />   <span class="hidden md:inline">Watch</span>
 
                 </button>
-                <button class="flex justify-center md:justify-around border text-white p-3 w-[25%] cursor-not-allowed rounded-full">
+                <button class="flex justify-center md:justify-around border text-white p-3 w-[25%] h-[25%] cursor-not-allowed rounded-full">
                     <Download/> <span class="hidden md:inline">Download</span>
                 </button>
                 <button 

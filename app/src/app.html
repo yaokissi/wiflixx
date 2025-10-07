@@ -3,8 +3,32 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		%sveltekit.head%
+		<style>
+			:root { --safe-area-bottom: 0px; }
+		</style>
+		<script>
+			(function() {
+				function updateSafeAreaBottom() {
+					try {
+						if (window.visualViewport) {
+							const vv = window.visualViewport;
+							const diff = Math.max(0, Math.round(window.innerHeight - vv.height - vv.offsetTop));
+							document.documentElement.style.setProperty('--safe-area-bottom', diff + 'px');
+						}
+					} catch (_) {}
+				}
+				window.addEventListener('resize', updateSafeAreaBottom);
+				window.addEventListener('orientationchange', updateSafeAreaBottom);
+				window.addEventListener('load', updateSafeAreaBottom);
+				if (window.visualViewport) {
+					window.visualViewport.addEventListener('resize', updateSafeAreaBottom);
+					window.visualViewport.addEventListener('scroll', updateSafeAreaBottom);
+				}
+				updateSafeAreaBottom();
+			})();
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
