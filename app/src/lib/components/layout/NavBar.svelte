@@ -239,12 +239,19 @@
                 on:input={handleSearch}
             />
         </div>
-        <button
-            class="ml-2 favorite-heart bg-white/10 p-2 rounded-full text-white h-9 w-9 inline-flex items-center justify-center hover:bg-white/20"
-            on:click={handleFavoritesClick}
-        >
-            <Heart size="18" />
-        </button>
+        <div class="relative ml-2">
+            <button
+                class="favorite-heart bg-white/10 p-2 rounded-full text-white h-9 w-9 inline-flex items-center justify-center hover:bg-white/20"
+                on:click={handleFavoritesClick}
+            >
+                <Heart size="18" />
+            </button>
+            {#if favoriteCount > 0}
+                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                    {favoriteCount}
+                </span>
+            {/if}
+        </div>
         <a href="https://yaodev.me" target="_blank" rel="noopener noreferrer" class="ml-2">
             <img src="https://i.ibb.co/hJtmmsh0/avatar1.png" alt="user avatar" class="rounded-full w-9 h-9"/>
         </a>

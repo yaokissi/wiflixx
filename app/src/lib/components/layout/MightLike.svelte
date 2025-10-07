@@ -46,7 +46,7 @@
     }
 </script>
 
-<section class="w-[70%] backdrop-blur-3xl rounded-xl border-white-500 min-h-[35vh]  overflow-auto">
+<section class="w-full lg:w-[70%] backdrop-blur-3xl rounded-xl border-white-500 min-h-[35vh]  overflow-auto">
     <div class="flex justify-between items-center w-[90%] mx-auto pt-5">
         <h2 class="text-lg text-white font-bold">💫 You Might Like</h2>
         <p class="text-sm text-white"><span class="text-gray-700 text-xs">Sort By :</span> Similar ⏚</p>
@@ -61,7 +61,7 @@
             <p class="text-white">Erreur: {error}</p>
         </div>
     {:else}
-        <div class="grid grid-cols-4 gap-4 w-[90%] mx-auto mt-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[90%] mx-auto mt-5">
             {#each movies as movie}
                 <div class="bg-white/5 rounded-lg overflow-hidden">
                     <div class="relative">
