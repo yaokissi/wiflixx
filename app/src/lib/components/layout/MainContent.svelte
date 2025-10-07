@@ -19,9 +19,9 @@ onMount(() => {
 </script>
 
 
-<main class="h-full overflow-y-scroll pb-20">
+<main class="h-full overflow-y-scroll pt-5 pb-20">
 
-  <section class="w-[95%] mx-auto min-h-screen bg-white/20 rounded-2xl shadow-lg backdrop-blur-md border border-white/30">
+  <section class="w-[95%] pt-5 pb-5 mx-auto min-h-screen bg-white/20 rounded-2xl shadow-lg backdrop-blur-md border border-white/30">
   {#if !isMobile}
     <NavBar class="hidden md:block fixed top-0 w-full" />
   {/if}
